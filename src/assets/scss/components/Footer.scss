@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #777;
+  padding: 10px 15px;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+
+    li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #777;
+
+    &.selected {
+      border-color: rgba(175, 47, 47, 0.2);
+    }
+  }
+}
